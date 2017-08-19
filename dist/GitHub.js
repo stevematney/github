@@ -3432,7 +3432,7 @@ var User = function (_Requestable) {
          options.since = this._dateToISO(options.since);
          options.before = this._dateToISO(options.before);
 
-         return this._requestAllPages('GET', this.__getScopedUrl('events'), options, cb);
+         return this._requestAllPages(this.__getScopedUrl('events'), options, cb);
       }
 
       /**
